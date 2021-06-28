@@ -18,7 +18,7 @@ elif int(month) == 12:
     next_month = 1
     next_month = str(f"{next_month:02}")
 
-    number_weekdays = np.busday_count("{}-{}".format(year, month), "{}-{}".format(next_year, next_month)) 
+    number_weekdays = np.busday_count("{}-{}".format(year, month), "{}-{}".format(year , month)) 
     print("The number of weekdays in the month of {}-{} are: {}".format(year, month, number_weekdays))
 
     exit()
@@ -31,6 +31,6 @@ if int(month) <= 2:
     month = str(f"{int(month):02}")
     next_month = str(f"{next_month:02}")
 
-number_weekdays = np.busday_count("{}-{}".format(year, month), "{}-{}".format(year, next_month)) 
+number_weekdays = np.busday_count("{}-{}".format(year, month), "{}-{}".format(year , month)) 
 print("The number of weekdays in the month of {}-{} are: {}".format(year, month, number_weekdays))
     
