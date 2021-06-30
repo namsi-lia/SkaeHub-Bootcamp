@@ -1,5 +1,4 @@
 #code implementation of boolean statements using if else if statement
-
 def is_leap(year):
     leap = False
     
